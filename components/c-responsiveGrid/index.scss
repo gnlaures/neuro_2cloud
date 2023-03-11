@@ -1,0 +1,52 @@
+.c-responsiveGrid {
+	@include transition($property: opacity);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	opacity: 0;
+	background: var(--white3);
+
+	// js complete
+	&.js-responsiveGrid {
+		opacity: 1;
+		> * {
+			transition: all 750ms ease;
+			transition-property: width, min-width, max-width, flex, padding;
+		}
+	}
+
+	// cols
+	&.--col12 {> * {@extend .u-fw8;}}
+	&.--col11 {> * {@extend .u-fw9;}}
+	&.--col10 {> * {@extend .u-fw10;}}
+	&.--col9 {> * {@extend .u-fw11;}}
+	&.--col8 {> * {@extend .u-fw12;}}
+	&.--col7 {> * {@extend .u-fw14;}}
+	&.--col6 {> * {@extend .u-fw16;}}
+	&.--col5 {> * {@extend .u-fw20;}}
+	&.--col4 {> * {@extend .u-fw25;}}
+	&.--col3 {> * {@extend .u-fw33;}}
+	&.--col2 {> * {@extend .u-fw50;}}
+	&.--col1 {> * {@extend .u-fw100;}}
+	&.--colNaN {
+		> * {
+			flex: 1 1 auto;
+		}
+	}
+
+	// content 100%
+	&.--fitContent {
+		> * {
+			display: flex;
+		}
+	}
+
+	// spacers
+	&.--spacers {
+		> * {
+			border-bottom: 1px solid var(--gray);
+			display: flex;
+			align-items: center;
+		}
+	}
+}

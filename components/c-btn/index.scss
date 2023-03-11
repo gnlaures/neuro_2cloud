@@ -1,0 +1,323 @@
+.c-btn {
+	@include transition();
+	display: inline-block;
+	position: relative;
+	background: transparent;
+	cursor: pointer;
+
+	&__hero {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+		position: relative;
+		z-index: 2;
+	}
+	&__caption {
+
+	}
+	&__icon {
+		* {
+			display: block;
+			object-fit: contain;
+		}
+	}
+
+	// sizes
+	&.--l {
+		border-radius: var(--btn__l__radius);
+		&:before {
+			border-radius: var(--btn__l__radius);
+		}
+		.c-btn__hero {
+			min-height: var(--btn__l__minHeight);
+			padding: var(--btn__l__padding);
+		}
+		.c-btn__icon {
+			width: calc(var(--btn__l__icon__size) + var(--btn__l__icon__spacer));
+			height: var(--btn__l__icon__size);
+			padding-left: calc(var(--btn__l__icon__spacer) / 2);
+			padding-right: calc(var(--btn__l__icon__spacer) / 2);
+			* {
+				width: var(--btn__l__icon__size);
+				height: var(--btn__l__icon__size);
+			}
+		}
+		.c-btn__caption {
+			padding-left: calc(var(--btn__l__icon__spacer) / 2);
+			padding-right: calc(var(--btn__l__icon__spacer) / 2);
+			font-weight: var(--btn__l__caption__fw);
+			font-size: var(--btn__l__caption__fs);
+		}
+	}
+	&.--m {
+		border-radius: var(--btn__m__radius);
+		&:before {
+			border-radius: var(--btn__m__radius);
+		}
+		.c-btn__hero {
+			min-height: var(--btn__m__minHeight);
+			padding: var(--btn__m__padding);
+		}
+		.c-btn__icon {
+			width: calc(var(--btn__m__icon__size) + var(--btn__m__icon__spacer));
+			height: var(--btn__m__icon__size);
+			padding-left: calc(var(--btn__m__icon__spacer) / 2);
+			padding-right: calc(var(--btn__m__icon__spacer) / 2);
+			* {
+				width: var(--btn__m__icon__size);
+				height: var(--btn__m__icon__size);
+			}
+		}
+		.c-btn__caption {
+			padding-left: calc(var(--btn__m__icon__spacer) / 2);
+			padding-right: calc(var(--btn__m__icon__spacer) / 2);
+			font-weight: var(--btn__m__caption__fw);
+			font-size: var(--btn__m__caption__fs);
+		}
+	}
+	&.--s {
+		border-radius: var(--btn__s__radius);
+		&:before {
+			border-radius: var(--btn__s__radius);
+		}
+		.c-btn__hero {
+			min-height: var(--btn__s__minHeight);
+			padding: var(--btn__s__padding);
+		}
+		.c-btn__icon {
+			width: calc(var(--btn__s__icon__size) + var(--btn__s__icon__spacer));
+			height: var(--btn__s__icon__size);
+			padding-left: calc(var(--btn__s__icon__spacer) / 2);
+			padding-right: calc(var(--btn__s__icon__spacer) / 2);
+			* {
+				width: var(--btn__s__icon__size);
+				height: var(--btn__s__icon__size);
+			}
+		}
+		.c-btn__caption {
+			padding-left: calc(var(--btn__s__icon__spacer) / 2);
+			padding-right: calc(var(--btn__s__icon__spacer) / 2);
+			font-weight: var(--btn__s__caption__fw);
+			font-size: var(--btn__s__caption__fs);
+		}
+	}
+
+	// themes
+	&.--primary {
+		background: var(--primary);
+		.c-btn__icon {
+			svg {
+				path {
+					fill: var(--white);
+				}
+			}
+		}
+		.c-btn__caption {
+			color: var(--white);
+		}
+		&:hover {
+			background: var(--primary__dark);
+		}
+		// extra modifiers
+		&.--stroke {
+			border-color: var(--primary);
+			.c-btn__caption {
+				color: var(--primary);
+			}
+			.c-btn__icon {
+				svg path {
+					fill: var(--primary);
+				}
+			}
+			&:hover {
+				background: var(--primary);
+				.c-btn__caption {
+					color: var(--white);
+				}
+				.c-btn__icon {
+					svg path {
+						fill: var(--white);
+					}
+				}
+			}
+		}
+		&.--gradient {
+			&:before {
+				background: var(--primary__gradient);
+			}
+			&:hover {
+				background: var(--primary);
+			}
+		}
+	}
+	&.--secondary {
+		background: var(--secondary);
+		.c-btn__icon {
+			svg {
+				path {
+					fill: var(--white);
+				}
+			}
+		}
+		.c-btn__caption {
+			color: var(--white);
+		}
+		&:hover {
+			background: var(--secondary__dark);
+		}
+		// extra modifiers
+		&.--stroke {
+			border-color: var(--secondary);
+			.c-btn__caption {
+				color: var(--secondary);
+			}
+			.c-btn__icon {
+				svg path {
+					fill: var(--secondary);
+				}
+			}
+			&:hover {
+				background: var(--secondary);
+				.c-btn__caption {
+					color: var(--white);
+				}
+				.c-btn__icon {
+					svg path {
+						fill: var(--white);
+					}
+				}
+			}
+		}
+		&.--gradient {
+			&:before {
+				background: var(--secondary__gradient);
+			}
+			&:hover {
+				background: var(--secondary);
+			}
+		}
+	}
+	&.--white {
+		background: var(--white);
+		.c-btn__icon {
+			svg {
+				path {
+					fill: var(--text);
+				}
+			}
+		}
+		.c-btn__caption {
+			color: var(--text);
+		}
+		&:hover {
+			background: var(--white__dark);
+		}
+		// extra modifiers
+		&.--stroke {
+			border-color: var(--text);
+			.c-btn__caption {
+				color: var(--text);
+			}
+			.c-btn__icon {
+				svg path {
+					fill: var(--text);
+				}
+			}
+			&:hover {
+				background: var(--white);
+				.c-btn__caption {
+					color: var(--text);
+				}
+				.c-btn__icon {
+					svg path {
+						fill: var(--text);
+					}
+				}
+			}
+		}
+		&.--gradient {
+			&:before {
+				background: var(--white__gradient);
+			}
+			&:hover {
+				background: var(--white);
+			}
+		}
+	}
+	&.--disabled {
+		background: var(--disabled);
+		pointer-events: none;
+		.c-btn__icon {
+			svg {
+				path {
+					fill: var(--disabled__dark);
+				}
+			}
+		}
+		.c-btn__caption {
+			color: var(--disabled__dark);
+		}
+		// extra modifiers
+		&.--stroke {
+			border-color: var(--disabled);
+			.c-btn__caption {
+				color: var(--disabled);
+			}
+			.c-btn__icon {
+				svg path {
+					fill: var(--disabled);
+				}
+			}
+		}
+		&.--gradient {
+			&:before {
+				background: var(--disabled);
+			}
+		}
+	}
+
+	// theme - gradient
+	&.--gradient {
+		background: transparent;
+		&:before {
+			@include transition();
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 1;
+		}
+		&:hover {
+			&:before {
+				opacity: 0;
+			}
+		}
+	}
+
+	// stroke
+	&.--stroke {
+		background: transparent;
+		border-style: solid;
+		&:before {
+			display: none;
+		}
+
+		// sizes
+		&.--s {
+			border-width: var(--btn__s__stroke__border__w);
+		}
+		&.--m {
+			border-width: var(--btn__m__stroke__border__w);
+		}
+		&.--l {
+			border-width: var(--btn__l__stroke__border__w);
+		}
+	}
+
+}

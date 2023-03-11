@@ -1,0 +1,112 @@
+//
+//
+//
+//
+// sizes & positions
+@mixin calcWidthForPositionNegative($negativePosition) {
+	position: relative;
+	left: $negativePosition;
+	width: calc(100% + ($negativePosition * (-2)));
+}
+@mixin flexWidth($val) {
+	min-width: $val;
+	max-width: $val;
+	flex: 1 1 $val;
+}
+@mixin flexHeight($val) {
+	min-height: $val;
+	max-height: $val;
+	flex: 1 1 $val;
+}
+@mixin cleanFlexWidth() {
+	min-width: inherit;
+	max-width: inherit;
+	flex: 1 1 inherit;
+	width: auto;
+}
+@mixin cleanFlexHeight() {
+	min-height: inherit;
+	max-height: inherit;
+	flex: 1 1 inherit;
+	height: auto;
+}
+
+
+//
+//
+//
+//
+// transitions & transforms
+@mixin transition($property: all, $duration: var(--transition__duration), $ease:var(--transition__type), $delay: 0){
+	transition: $property $duration $ease;
+	transition-delay: $delay;
+}
+@mixin transforms($property, $origin: center) {
+	transform: $property;
+	transform-origin: $origin;
+}
+@mixin rotate($rotate, $origin: center) {
+	@include transforms(rotate($rotate), $origin);
+}
+@mixin skew($skew, $origin: center) {
+	@include transforms(skew($skew), $origin);
+}
+@mixin translate($yPercent, $xPercent, $origin: center) {
+	@include transforms(translateY($yPercent) translateX($xPercent), $origin);
+}
+@mixin scale($scale, $origin: center) {
+	@include transforms(scale($scale), $origin);
+}
+
+
+//
+//
+//
+//
+// texts
+@mixin placeholder {
+	&.placeholder {@content}
+	&:-moz-placeholder {@content}
+	&::-moz-placeholder {@content}
+	&::placeholder {@content}
+}
+
+
+//
+//
+//
+//
+// display
+@mixin showElement() {
+	opacity: 1;
+	visibility: visible;
+}
+@mixin hideElement() {
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+//
+//
+//
+//
+// effects
+@mixin pb($pb: 100%) {
+	-webkit-filter: grayscale($pb);
+	filter: grayscale($pb);
+}
+@mixin gradient($start: var(--primary), $end: var(--primaryDark), $angle: 90deg, $initPercent: 0%, $endPercent: 100%) {
+	background: $start;
+	background: -moz-linear-gradient($angle, $start $initPercent, $end $endPercent);
+	background: -webkit-linear-gradient($angle, $start $initPercent, $end $endPercent);
+	background: linear-gradient($angle, $start $initPercent, $end $endPercent);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#{$start}",endColorstr="#{end}",GradientType=1);
+}
+@mixin bg_image($folder, $file, $repeat: no-repeat, $size: cover, $attach: inherit, $position: center) {
+	background-image: url(#{$folder}#{$file});
+	background-repeat: $repeat;
+	background-size: $size;
+	background-position: $position;
+	background-attachment: $attach;
+}

@@ -1,0 +1,187 @@
+:root {
+
+    /*
+    /
+    /
+    /
+    / colors */
+    --primary__light: #3075FB;
+    --primary: #3075FB;
+    --primary__dark: #3075FB;
+    --primary__gradient: linear-gradient(0deg, #3ACC37 0%, #0F7B0D 100%);
+
+    --secondary__light: #50018A;
+    --secondary: #50018A;
+    --secondary__dark: #50018A;
+    --secondary__gradient: linear-gradient(0deg, #3380D9 0%, #04438D 100%);
+
+    --primary__to__secondary__gradient: linear-gradient(180deg, #3075FB 0%, #50018A 100%);
+
+    --white: #fff;
+    --white2: #F5F7FA;
+    --white3: #f2f2f2;
+    --white__gradient: linear-gradient(0deg, #fff 0%, #f2f2f2 100%);
+
+    --gray: #D7D7D7;
+    --gray2: #b9b9be;
+    --gray3: #848484;
+    --gray4: #5f5f5f;
+    --gray5: #454545;
+    --gray__gradient: linear-gradient(0deg, #D7D7D7 0%, #5f5f5f 100%);;
+
+    --black2: #111111;
+    --black3: #222222;
+    --black: #000000;
+    --black__gradient: linear-gradient(0deg, #111111 0%, #000000 100%);
+
+    --disabled: var(--gray);
+    --disabled__dark: var(--gray3);
+
+    --text__light: #6F6F6E;
+    --text: #707070;
+    --text__dark: var(--gray4);
+    --text__placeholder: var(--gray2);
+
+    --feedback__success: var(--primary);
+    --feedback__load: var(--gray2);
+    --feedback__error: #ab2e45;
+
+    --wpp__primary: #03BF56;
+    --wpp__secondary: #02AB4D;
+    --twitter__primary: #0F9DFF;
+    --twitter__secondary: #047fd4;
+    --facebook__primary: #3764B9;
+    --facebook__secondary: #28519e;
+    --instagram__primary: #FF3A55;
+    --instagram__secondary: #d11f38;
+    --linkedin__primary: #2864B4;
+    --linkedin__secondary: #194c91;
+    --spotify__primary: #1ED764;
+    --spotify__secondary: #11ad4c;
+    --youtube__primary: #C4302B;
+    --youtube__secondary: #9c1d19;
+
+    --author__primary: #f90;
+    --author__secondary: #f10;
+
+
+    /*
+    /
+    /
+    /
+    / project base styles */
+    --page__bg: var(--white2);
+    --page__text__selection__bg: var(--primary);
+    --page__text__selection__color: var(--white);
+
+
+    /*
+    /
+    /
+    /
+    / sizes */
+    --container__padding: 0 20px;
+    --container__width: 1230px;
+    --container__width__big: 1440px;
+    --container__width__small: 940px;
+    --radius: 10px;
+
+
+    /*
+    /
+    /
+    /
+    / scroll bar */
+    --scroll__size: 12px;
+    --scroll__bg: var(--white2);
+    --scroll__bar: var(--primary);
+    --scroll__radius: 0;
+
+
+    /*
+    /
+    /
+    /
+    / fonts */
+    --fs__base: 1rem;
+    --fw__thin: 100;
+    --fw__extraLight: 200;
+    --fw__light: 300;
+    --fw__regular: 400;
+    --fw__medium: 500;
+    --fw__semiBold: 600;
+    --fw__bold: 700;
+    --fw__extraBold: 800;
+    --fw__black: 900;
+    --ff__primary: 'Quicksand', sans-serif;
+    --ff__secondary: 'Fugaz One', sans-serif;
+
+
+    /*
+    /
+    /
+    /
+    / shadows */
+    --shadow__s: 0;
+    --shadow__m: 0;
+
+
+    /*
+    /
+    /
+    /
+    / transition */
+    --transition__type: linear;
+    --transition__duration: 400ms;
+
+
+    /*
+    /
+    /
+    /
+    / c-form */
+    --field__height: 40px;
+    --field__padding: 20px;
+    --field__border__w: 2px;
+    --field__radius: 20px;
+    --field__check__size: 20px;
+    --field__spacer__h: 1px;
+    --field__lineHeight: calc(var(--field__height) - (var(--field__border__w) * 2));
+    --field__check__icon: url('../media/icons/icon_checked.svg');
+    --field__check__icon__white: url('../media/icons/icon_checked_white.svg');
+    --field__gap: 10px; /* --field__gap e --field__gap__negative deve ser o mesmo numero */
+    --field__gap__negative: -10px; /* --field__gap__negative deve ser o field__gap com '-' na frente */
+
+
+    /*
+    /
+    /
+    /
+    / c-btn */
+    --btn__s__minHeight: 36px;
+    --btn__s__padding: 3px 15px;
+    --btn__s__radius: 18px;
+    --btn__s__stroke__border__w: 2px;
+    --btn__s__icon__size: 16px;
+    --btn__s__icon__spacer: 6px;
+    --btn__s__caption__fw: var(--fw__medium);
+    --btn__s__caption__fs: calc(var(--fs__base) - 0.15rem);
+
+    --btn__m__minHeight: 40px;
+    --btn__m__padding: 5px 20px;
+    --btn__m__radius: 20px;
+    --btn__m__stroke__border__w: 2px;
+    --btn__m__icon__size: 20px;
+    --btn__m__icon__spacer: 8px;
+    --btn__m__caption__fw: var(--fw__medium);
+    --btn__m__caption__fs: var(--fs__base);
+
+    --btn__l__minHeight: 48px;
+    --btn__l__padding: 5px 25px;
+    --btn__l__radius: 30px;
+    --btn__l__stroke__border__w: 2px;
+    --btn__l__icon__size: 22px;
+    --btn__l__icon__spacer: 10px;
+    --btn__l__caption__fw: var(--fw__semiBold);
+    --btn__l__caption__fs: calc(var(--fs__base) + 0.15rem);
+}

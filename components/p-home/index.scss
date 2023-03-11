@@ -1,0 +1,7 @@
+body.p-home {
+	background: var(--primary__to__secondary__gradient);
+	.c-videoBackground {
+		@include pb(80%);
+		opacity: 0.25;
+	}
+}

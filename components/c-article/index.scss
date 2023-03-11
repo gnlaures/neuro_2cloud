@@ -1,0 +1,9 @@
+.c-article {
+	h1 {
+		@include preset__h1;
+		margin-bottom: 15px;
+	}
+	p {
+		@include preset__p()
+	}
+}

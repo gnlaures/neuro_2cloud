@@ -1,5 +1,16 @@
 body.p-home {
 	background: var(--primary__to__secondary__gradient);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	.s-preSite {
+		flex: 1 1 auto;
+		min-height: calc(100vh - 143px);
+	}
+	.l-footer {
+		flex: 0 0 auto;
+	}
 	.c-videoBackground {
 		@include pb(80%);
 		opacity: 0.25;

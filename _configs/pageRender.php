@@ -46,7 +46,7 @@
         <!-- css files -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link href="./theme.css" type="text/css" rel="stylesheet" />
         <link href="dist/styles-min.css" type="text/css" rel="stylesheet" />
     </head>

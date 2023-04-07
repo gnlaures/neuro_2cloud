@@ -1,0 +1,28 @@
+.c-contactList {
+	h4 {
+		@include preset__h5;
+		color: var(--secondary);
+		display: block;
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	&__item {
+		display: block;
+		margin-right: 40px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		strong, span {
+			@include preset__p__s(var(--white));
+		}
+		strong {
+			font-weight: var(--fw__semiBold);
+		}
+	}
+}

@@ -9,9 +9,9 @@
         ?>
         <div class="c-article">
             <h1>Em breve, um novo site incrível!</h1>
-            <p>O novo site será lançado em breve! Fique atento ao nosso contador regressivo e não perca a inauguração,
-                estamos trabalhando duro para trazer uma nova experiência online para você. Aguarde!</p>
+            <p>O novo site será lançado em breve!</p>
         </div>
+        <?php include('components/c-typingBox/index.php');?>
         <?php $cCountdown = array(
             "modifiers" => "",
             "date" => "Mar 10, 2024 17:44:20",

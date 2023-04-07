@@ -1,0 +1,56 @@
+.c-socialList {
+	h4 {
+		@include preset__h5;
+		color: var(--secondary);
+		display: block;
+		width: 100%;
+		margin-bottom: 8px;
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+	&__item {
+		display: block;
+		margin-right: 6px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			i {
+				@include transition();
+				@include flexWidth(42px);
+				@include flexHeight(42px);
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				background: var(--white);
+				border-radius: 50%;
+				svg {
+					display: block;
+					width: 18px;
+					height: 18px;
+					path {
+						fill: var(--primary);
+					}
+				}
+			}
+			span {
+				@include preset__p__s();
+				color: var(--white);
+			}
+			&:hover {
+				i {
+					background: var(--secondary__dark);
+				}
+			}
+		}
+	}
+}

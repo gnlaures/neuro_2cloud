@@ -1,8 +1,7 @@
 .s-preSite {
 	min-width: 100%;
-	min-height: 100vh;
+	min-height: 90vh;
 	padding: 60px 40px;
-	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -15,11 +14,10 @@
 		display: block;
 		margin: 0 auto;
 		width: 100%;
-		max-width: 360px;
+		max-width: 280px;
 	}
-
 	.c-article {
-		margin-top: 30px;
+		margin-top: 20px;
 		* {
 			display: block;
 			width: 100%;
@@ -27,12 +25,18 @@
 			color: var(--white);
 		}
 	}
+	.c-typingBox {
+		margin-top: 35px;
+	}
 
 	.c-btn.--wpp {
-		max-width: 362px;
+		display: block;
+		width: 100%;
+		max-width: 400px;
 		margin: 0 auto;
 		background: var(--wpp__primary);
-		border-radius: 50px;
+		border-radius: 80px;
+		padding: 12px 35px;
 		&:hover {
 			background: var(--wpp__secondary);
 		}
@@ -45,7 +49,9 @@
 	}
 
 	.c-spacer {
+		opacity: 0.25;
 		margin-bottom: 40px;
+		display: none;
 	}
 
 	.c-countdown {
@@ -56,5 +62,10 @@
 @media screen and (max-width: 480px) {
 	.s-preSite {
 		padding: 40px 0;
+		.c-article {
+			h1 {
+				font-size: 26px;
+			}
+		}
 	}
 }

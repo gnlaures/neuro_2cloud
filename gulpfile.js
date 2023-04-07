@@ -26,14 +26,18 @@ const control = {
             "components/c-article/index.scss",
             "components/c-formWhatsapp/index.scss",
             "components/c-videoBackground/index.scss",
+            "components/c-typingBox/index.scss",
+            "components/c-contactList/index.scss",
+            "components/c-socialList/index.scss",
 
             "components/s-preSite/index.scss",
+
+            "components/l-footer/index.scss",
 
             "components/p-home/index.scss",
         ],
         "scripts": [
             //"assets/js/_utilities.js",
-            //"assets/js/cResponsiveGrid.js",
             //"assets/js/cForm.js",
             //"assets/js/sDefault.js",
             //"assets/js/lNav.js",
@@ -41,6 +45,7 @@ const control = {
             "components/c-form/index.js",
             "components/c-countdown/index.js",
             "components/c-formWhatsapp/index.js",
+            "components/c-typingBox/index.js",
         ],
     },
     "dist" : 'dist/'

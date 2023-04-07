@@ -1,0 +1,48 @@
+.c-typingBox {
+	@include preset__scroll();
+	border-radius: 10px;
+	background: rgba(0,0,0,0.75);
+	padding: 30px;
+	display: block;
+	width: 100%;
+	&__line {
+		font-family: "Courier New", Monospaced;
+		color: var(--white);
+		font-size: 16px;
+		span {
+			font-family: "Courier New", Monospaced;
+			color: #f90;
+			font-size: 16px;
+		}
+		&.--tab {
+			padding-left: 30px;
+		}
+	}
+
+	.js-c-typingBox__quote {
+		//background: #000;
+	}
+
+	.js-c-typingox__cursor {
+		display: inline-block;
+		background-color: transparent;
+		margin-left: 0.1rem;
+		width: 1px;
+		height: 12px;
+		animation: none;
+		position: relative;
+		top: 2px;
+		&.--typing {
+			animation: cTypingBox__cursorAnimation 500ms infinite;
+			background-color: #ccc;
+		}
+	}
+}
+
+@keyframes cTypingBox__cursorAnimation {
+	0%  { background-color: #ccc; }
+	49% { background-color: #ccc; }
+	50% { background-color: transparent; }
+	99% { background-color: transparent; }
+	100%  { background-color: #ccc; }
+}

@@ -5,17 +5,17 @@
     /
     /
     / colors */
-    --primary__light: #3075FB;
+    --primary__light: #4483fc;
     --primary: #3075FB;
-    --primary__dark: #3075FB;
-    --primary__gradient: linear-gradient(0deg, #3ACC37 0%, #0F7B0D 100%);
+    --primary__dark: #1451c7;
+    --primary__gradient: linear-gradient(0deg, #3075FB 0%, #3075FB 100%);
 
-    --secondary__light: #50018A;
+    --secondary__light: #2f0152;
     --secondary: #50018A;
-    --secondary__dark: #50018A;
+    --secondary__dark: #2f0152;
     --secondary__gradient: linear-gradient(0deg, #3380D9 0%, #04438D 100%);
 
-    --primary__to__secondary__gradient: linear-gradient(180deg, #3075FB 0%, #50018A 100%);
+    --primary__to__secondary__gradient: linear-gradient(180deg, #061430 0%, #50018A 100%);
 
     --white: #fff;
     --white2: #F5F7FA;
@@ -92,9 +92,9 @@
     /
     /
     / scroll bar */
-    --scroll__size: 12px;
-    --scroll__bg: var(--white2);
-    --scroll__bar: var(--primary);
+    --scroll__size: 8px;
+    --scroll__bg: var(--primary);
+    --scroll__bar: var(--primary__dark);
     --scroll__radius: 0;
 
 
@@ -113,7 +113,7 @@
     --fw__bold: 700;
     --fw__extraBold: 800;
     --fw__black: 900;
-    --ff__primary: 'Quicksand', sans-serif;
+    --ff__primary: 'Manrope', sans-serif;
     --ff__secondary: 'Fugaz One', sans-serif;
 
 

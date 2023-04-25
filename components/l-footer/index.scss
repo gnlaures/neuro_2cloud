@@ -2,12 +2,12 @@
 	display: block;
 	padding: 30px 0;
 	width: 100%;
-	background: var(--primary);
+	background: var(--secondary__dark);
 	.u-container {
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
-		justify-content: space-between;
+		justify-content: center;
 		max-width: 880px;
 	}
 	&__col {

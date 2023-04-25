@@ -5,12 +5,13 @@
 		display: block;
 		width: 100%;
 		margin-bottom: 8px;
+		text-align: center;
 	}
 	&__list {
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 	&__item {
 		display: block;
@@ -20,6 +21,7 @@
 		}
 		strong, span {
 			@include preset__p__s(var(--white));
+			text-align: center;
 		}
 		strong {
 			font-weight: var(--fw__semiBold);

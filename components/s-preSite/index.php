@@ -14,7 +14,7 @@
         <?php include('components/c-typingBox/index.php');?>
         <?php $cCountdown = array(
             "modifiers" => "",
-            "date" => "Mar 10, 2024 17:44:20",
+            "date" => "Jul 04, 2023 23:59:59",
             "componentFeedback" => "components/c-countdown/feedback.php",
             "caption_days" => "Dias",
             "caption_hours" => "Horas",
@@ -29,10 +29,12 @@
         include('components/c-spacer/index.php');
         ?>
         <?php $cBtn = array(
-            "modifiers" => "--primary --m --wpp js-openFormWhatsapp",
+            "modifiers" => "--primary --m --primary",
             "caption" => "Quero ser avisado no whatsapp
 quando o site for lançado.",
-            "tag" => ""
+            "tag" => "a",
+            "href" => "https://www.2cloud.com.br/lp-whatsapp",
+            "a_title" => "Quero acompanhar novidades",
         );
         include('components/c-btn/index.php'); ?>
     </div>
